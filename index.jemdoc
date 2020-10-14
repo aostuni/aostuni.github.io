@@ -1,8 +1,11 @@
 # jemdoc: menu{MENU}{index.html}
 = About Me
 
-I am an undergraduate student in my senior year at the [https://umd.edu/ University of Maryland] (UMD) in the 
-[https://www.universityhonors.umd.edu/ University Honors Program], 
+~~~
+{}{img_left}{ProfilePic.jpeg}{WHAT}{215px}{300}{}
+Anthony Ostuni - B.S. CS & Math @ UMD
+
+I am an undergraduate student in my senior year at the [https://umd.edu/ University of Maryland] (UMD), 
 where I study computer science and applied mathematics. I am always looking for an opportunity to 
 expand my skills and knowledge of these fields, primarily in those areas with a strong theoretical aspect. 
 
@@ -10,6 +13,7 @@ This past summer I was a researcher at the [http://www.cs.umd.edu/projects/reuca
 Algorithms for Real Problems] program at UMD. I've previously developed skills as a 
 software engineering intern at [https://careers.google.com/students/engineering-and-technical-internships/ Google] 
 and the [https://www.jhuapl.edu/ Johns Hopkins Applied Physics Laboratory]. 
+~~~
 
 == Research Interests
 

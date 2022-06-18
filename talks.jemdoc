@@ -1,10 +1,11 @@
 # jemdoc: menu{MENU}{talks.html}
 = Talks
--UCSD Theory Lunch 
+
+- UCSD Theory Lunch 
     -- Communication Complexity and the Hales-Jewett Theorem, May 2022
     -- Applications of the Sunflower Lemma, January 2022
     -- Graph Toughness, May 2021
 
--Undergraduate
+- Undergraduate
     -- ProportionNet: Balancing Fairness and Revenue for Auction Design with Deep Learning, August 2020
     -- The Toughness of Kneser Graphs, August 2020

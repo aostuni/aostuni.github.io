@@ -1,7 +1,8 @@
 # jemdoc: menu{MENU}{talks.html}
 = Talks
 
-- [https://cstheory.ucsd.edu/lunch.html UCSD Theory Lunch] 
+- [https://cstheory.ucsd.edu/lunch.html UCSD Theory Lunch]
+    -- Locality Bounds for Sampling Hamming Slices, February 2024
     -- The Log-Rank Conjecture for XOR-lifted functions, May 2023
     -- Entropic techniques - a breakthrough on the Union-Closed Conjecture, January 2023
     -- The Log-Rank Conjecture and lifting theorems, September 2022

@@ -1,18 +1,24 @@
 # jemdoc: menu{MENU}{talks.html}
 = Talks
 
-- [https://cstheory.ucsd.edu/lunch.html UCSD Theory Lunch]
-    -- Locality Bounds for Sampling Hamming Slices, February 2024
-    -- The Log-Rank Conjecture for XOR-lifted functions, May 2023
-    -- Entropic techniques - a breakthrough on the Union-Closed Conjecture, January 2023
-    -- The Log-Rank Conjecture and lifting theorems, September 2022
-    -- Communication complexity and the Hales-Jewett theorem, May 2022
-    -- Applications of the Sunflower Lemma, January 2022
-    -- Graph toughness, May 2021
+- UC Irvine (December '24)
 
-- [https://www.sdmathcircle.org/home San Diego Math Circle]
-    -- Ramsey theory, October 2022
+- CU Boulder (October '24)
+
+- [https://cse.ucsd.edu/research/theory-seminar UCSD Theory Seminar] (April '24)
+
+- [https://cstheory.ucsd.edu/lunch.html UCSD Theory Lunch]
+    -- Corners in Quasirandom Groups via Sparse Mixing (December '24)
+    -- Locality Bounds for Sampling Hamming Slices (February '24)
+    -- The Log-Rank Conjecture for XOR-lifted functions (May '23)
+    -- Entropic techniques - a breakthrough on the Union-Closed Conjecture (January '23)
+    -- The Log-Rank Conjecture and lifting theorems (September '22)
+    -- Communication complexity and the Hales-Jewett theorem (May '22)
+    -- Applications of the Sunflower Lemma (January '22)
+    -- Graph toughness (May '21)
+
+- [https://www.sdmathcircle.org/home San Diego Math Circle] (October '22)
 
 - Undergraduate
-    -- ProportionNet: balancing fairness and revenue for auction design with deep learning, August 2020
-    -- The toughness of Kneser graphs, August 2020
+    -- ProportionNet: balancing fairness and revenue for auction design with deep learning (August '20)
+    -- The toughness of Kneser graphs (August '20)

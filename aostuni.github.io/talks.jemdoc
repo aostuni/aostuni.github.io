@@ -1,0 +1,23 @@
+# jemdoc: menu{MENU}{talks.html}
+= Talks
+
+- UC Irvine Combinatorics and Probability Seminar (December '24)
+
+- CU Boulder Theory Seminar (October '24)
+
+- [https://cse.ucsd.edu/research/theory-seminar UCSD Theory Seminar] (April '24)
+
+- [https://cstheory.ucsd.edu/lunch.html UCSD Theory Lunch]
+    -- Corners in Quasirandom Groups via Sparse Mixing (December '24)
+    -- Locality Bounds for Sampling Hamming Slices (February '24)
+    -- The Log-Rank Conjecture for XOR-lifted functions (May '23)
+    -- Entropic techniques - a breakthrough on the Union-Closed Conjecture (January '23)
+    -- The Log-Rank Conjecture and lifting theorems (September '22)
+    -- Communication complexity and the Hales-Jewett theorem (May '22)
+    -- Applications of the Sunflower Lemma (January '22)
+    -- Graph toughness (May '21)
+
+- [https://www.sdmathcircle.org/home San Diego Math Circle] (October '22)
+
+- Undergraduate
+    -- ProportionNet: balancing fairness and revenue for auction design with deep learning (August '20

@@ -1,0 +1,38 @@
+# jemdoc: menu{MENU}{papers.html}
+= Papers
+
+Authorship is ordered alphabetically by last name.
+
+. [https://arxiv.org/abs/2504.07006 Quasipolynomial bounds for the corners theorem]
+with Michael Jaber, Yang P. Liu, Shachar Lovett, and Mehtaab Sawhney. Submitted.
+
+. [https://arxiv.org/abs/2411.08183 Locally Sampleable Uniform Symmetric Distributions] 
+with Daniel M. Kane and Kewen Wu. Symposium on Theory of Computing (STOC'25).
+
+. [https://arxiv.org/abs/2404.07380 Strong bounds for skew corner-free sets] with Michael Jaber and Shachar Lovett.
+Discrete Analysis (2025).
+
+. [https://arxiv.org/abs/2309.10286 A tight lower bound on non-adaptive group testing estimation]
+with Nader H. Bshouty, Tsun-Ming Cheung, Gergely Harcos, and Hamed Hatami. Discrete Applied Mathematics (2025).
+
+. [https://arxiv.org/abs/2402.14278 Locality Bounds for Sampling Hamming Slices] with Daniel M. Kane and Kewen Wu.
+Symposium on Theory of Computing (STOC'24) ([https://www.youtube.com/watch?v=KCkxGpfPJQg talk]). 
+
+. [https://arxiv.org/abs/2312.09400 Refuting approaches to the log-rank conjecture for XOR functions] with Hamed Hatami, 
+Kaave Hosseini, and Shachar Lovett. International Colloquium on Automata, Languages, and Programming (ICALP'24).
+
+. [https://arxiv.org/abs/2104.01665 Extremal Graphs for a Spectral Inequality 
+on Edge-Disjoint Spanning Trees] with Sebastian M. Cioabă, Davin Park, 
+Sriya Potluri, Tanay Wakhare, and Wiseley Wong. The Electronic Journal of Combinatorics (2022).
+
+. [https://arxiv.org/abs/2008.08183 The Toughness of Kneser Graphs] with
+Amartya Banerjee, Sebastian M. Cioabă, Nathan Hayes, Davin Park, Tanay Wakhare,
+and Wiseley Wong. Discrete Mathematics (2021).
+
+. [https://www.cs.umd.edu/users/gasarch/open/cross.pdf The Complexity of Chromatic Number 
+When Restricted to Graphs with Bounded Genus or Bounded Crossing Number] with 
+William Gasarch, Nathan Hayes, and Davin Park. Manuscript (2021).
+
+. [https://arxiv.org/abs/2010.06398 ProportionNet: Balancing Fairness and Revenue for 
+Auction Design with Deep Learning] with Ping-yeh Chiang,
+Michael Curry, John Dickerson, Samuel Dooley, Tom 

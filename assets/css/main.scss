@@ -41,3 +41,37 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* === Custom CSS Overrides for Publications === */
+
+.list__item,
+.archive__item {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Ensure NO default vertical margin or padding exists on the P tags (Lines 2, 3, 4) */
+.archive__item p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.archive__item-title {
+    /* 1. Ensure the element itself never has a text decoration (underline) */
+    text-decoration: none !important;
+
+    /* 2. Target the element on hover and explicitly disable the underline */
+    &:hover {
+        text-decoration: none !important;
+    }
+
+    /* 3. Target any link inside the element (like the (arXiv) link) */
+    a {
+        text-decoration: none !important;
+
+        /* 4. Target any link inside the element on hover */
+        &:hover {
+            text-decoration: none !important;
+        }
+    }
+}

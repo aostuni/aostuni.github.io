@@ -12,7 +12,25 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
+<li>
+  <strong>
+    {% if post.link %}
+      <a href="{{ post.link }}">{{ post.title }}</a>
+    {% else %}
+      {{ post.title }}
+    {% endif %}
+  </strong>
+  <br>
+  {% if post.venue and post.date %}
+    {{ post.venue }}. {{ post.date | date: "%B %Y" }}.
+  {% elsif post.location %}
+    {{ post.location }}
+  {% elsif post.date %}
+    {{ post.date | date: "%B %Y" }}.
+  {% endif %}
+</li>
+
+<!-- <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
@@ -39,4 +57,4 @@
     {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
   </article>
-</div>
+</div> -->

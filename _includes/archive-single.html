@@ -28,8 +28,26 @@
     {% endif %}
 
     <p style="margin-top: 0.15em; padding-bottom: 0;">
-      {% comment %} Venue and Year {% endcomment %}
-      {% if post.venue %}{{ post.venue | strip }}{% endif %}{% if post.venue and post.year %}, {% endif %}{% if post.year %}{{ post.year | strip }}.{% endif %}
+      <!-- {% comment %} Venue and Year {% endcomment %}
+      {% if post.venue %}{{ post.venue | strip }}{% endif %}{% if post.venue and post.year %}, {% endif %}{% if post.year %}{{ post.year | strip }}{% endif %} -->
+    {% comment %} Venue(s) and Year(s) {% endcomment %}
+      {% if post.venues %}
+        {%- for v in post.venues -%}
+          <p style="margin-top: 0.15em; padding-bottom: 0;">
+            {%- if v.url -%}
+              <a href="{{ v.url }}" rel="noopener">{{ v.name | strip }}</a>
+            {%- else -%}
+              {{ v.name | strip }}
+            {%- endif -%}
+            {%- if v.year -%}, {{ v.year | strip }}{%- endif -%}
+            {%- if v.note -%} — {{ v.note | strip }}{%- endif -%}
+          </p>
+        {%- endfor -%}
+      {% else %}
+        <p style="margin-top: 0.15em; padding-bottom: 0;">
+          {% if post.venue %}{{ post.venue | strip }}{% endif %}{% if post.venue and post.year %}, {% endif %}{% if post.year %}{{ post.year | strip }}{% endif %}
+        </p>
+      {% endif %}
     </p>
 
     {% if post.url_arxiv or post.arxiv %}

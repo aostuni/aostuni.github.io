@@ -10,7 +10,7 @@ redirect_from:
 Welcome!
 ------
 I am a PhD candidate in UC San Diego's computer science [theory group](https://cstheory.ucsd.edu/home.html),
-where I am extremely fortuate to be advised by [Daniel M. Kane](https://cseweb.ucsd.edu/~dakane/) and 
+where I am extremely fortunate to be advised by [Daniel M. Kane](https://cseweb.ucsd.edu/~dakane/) and 
 [Shachar Lovett](http://cseweb.ucsd.edu/~slovett/home.html). I completed my undergraduate studies at the 
 University of Maryland, College Park.
 

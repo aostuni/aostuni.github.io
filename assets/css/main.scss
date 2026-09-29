@@ -75,3 +75,68 @@
         }
     }
 }
+
+.page__content a {
+    text-decoration: none !important;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+.publication-actions {
+    margin-top: 0.3em;
+    margin-bottom: 0.35em;
+}
+
+.publication-toggle {
+    appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0 0.8em 0 0;
+
+    font-family: inherit;
+    font-size: 0.9em;
+    color: var(--global-link-color);
+
+    cursor: pointer;
+}
+
+.publication-toggle:hover {
+    color: var(--global-link-color-hover);
+    text-decoration: underline;
+}
+
+.publication-extra {
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    font-size: 0.95em;
+}
+
+.publication-extra[hidden] {
+    display: none;
+}
+
+.publication-abstract p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.publication-bibtex pre {
+    margin-top: 0.4em;
+    padding: 0.8em;
+    overflow-x: auto;
+    font-size: 0.8em;
+    line-height: 1.4;
+}
+
+/* Slightly reduce spacing between publication/teaching entries */
+.list__item + .list__item .archive__item-title {
+    margin-top: 1.5em !important;
+}
+
+/* Slightly reduce spacing before the first publication/teaching entry */
+.list__item:first-of-type .archive__item-title {
+    margin-top: 1.5em !important;
+}

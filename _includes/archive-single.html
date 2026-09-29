@@ -15,10 +15,21 @@
 <div class="list__item">
   <article class="archive__item" itemscope="" itemtype="http://schema.org/CreativeWork">
 
-    {% assign title_link = post.url_link | default: post.url_pdf | default: post.url_arxiv %}
+    {% if post.url_arxiv %}
+      {% assign title_link = post.url_arxiv %}
+    {% elsif post.arxiv %}
+      {% capture title_link %}https://arxiv.org/abs/{{ post.arxiv }}{% endcapture %}
+    {% else %}
+      {% assign title_link = post.url_link | default: post.url_pdf %}
+    {% endif %}
 
-    <h3 class="archive__item-title" itemprop="headline" style="margin-bottom: 0.15 em; display: inline-block;">
-      {{ post.title }}
+    <h3 class="archive__item-title" itemprop="headline"
+        style="margin-bottom: 0.15em; display: inline-block;">
+      {% if title_link %}
+        <a href="{{ title_link }}" rel="noopener">{{ post.title }}</a>
+      {% else %}
+        {{ post.title }}
+      {% endif %}
     </h3>
 
     {% if post.authors %}
@@ -27,34 +38,28 @@
       </p>
     {% endif %}
 
-    <p style="margin-top: 0.15em; padding-bottom: 0;">
-      <!-- {% comment %} Venue and Year {% endcomment %}
-      {% if post.venue %}{{ post.venue | strip }}{% endif %}{% if post.venue and post.year %}, {% endif %}{% if post.year %}{{ post.year | strip }}{% endif %} -->
     {% comment %} Venue(s) and Year(s) {% endcomment %}
-      {% if post.venues %}
-        {%- for v in post.venues -%}
-          <p style="margin-top: 0.15em; padding-bottom: 0;">
-            {%- if v.url -%}
-              <a href="{{ v.url }}" rel="noopener">{{ v.name | strip }}</a>
-            {%- else -%}
-              {{ v.name | strip }}
-            {%- endif -%}
-            {%- if v.year -%}, {{ v.year | strip }}{%- endif -%}
-            {%- if v.note -%} — {{ v.note | strip }}{%- endif -%}
-          </p>
-        {%- endfor -%}
-      {% else %}
+    {% if post.venues %}
+      {% for v in post.venues %}
         <p style="margin-top: 0.15em; padding-bottom: 0;">
-          {% if post.venue %}{{ post.venue | strip }}{% endif %}{% if post.venue and post.year %}, {% endif %}{% if post.year %}{{ post.year | strip }}{% endif %}
+          {% if post.collection == "publications" %}<em>{% endif %}
+          {%- if v.url -%}
+            <a href="{{ v.url }}" rel="noopener">{{ v.name | strip }}</a>
+          {%- else -%}
+            {{ v.name | strip }}
+          {%- endif -%}
+          {%- if v.year -%}, {{ v.year | strip }}{%- endif -%}
+          {%- if v.note -%} — {{ v.note | strip }}{%- endif -%}
+          {% if post.collection == "publications" %}</em>{% endif %}
         </p>
-      {% endif %}
-    </p>
-
-    {% if post.url_arxiv or post.arxiv %}
-      <p style="margin-top: 0.15 em; padding-bottom: 0 em;">
-        <a href="{{ post.url_arxiv | default: post.arxiv | prepend: 'https://arxiv.org/abs/' }}" rel="permalink">
-          arXiv: {{ post.url_arxiv | default: post.arxiv }}
-        </a>
+      {% endfor %}
+    {% else %}
+      <p style="margin-top: 0.15em; padding-bottom: 0;">
+        {% if post.collection == "publications" %}<em>{% endif %}
+        {%- if post.venue -%}{{ post.venue | strip }}{%- endif -%}
+        {%- if post.venue and post.year -%}, {% endif -%}
+        {%- if post.year -%}{{ post.year | strip }}{%- endif -%}
+        {% if post.collection == "publications" %}</em>{% endif %}
       </p>
     {% endif %}
 
